@@ -10,7 +10,7 @@ connectDB();
 // app.use(cors({origin:'http://localhost:5173'}))
 app.use(cors({ origin: "https://crud-client-beta.vercel.app" }));
 app.use(express.json());
-app.use("/", productRouter);
+app.use("/products", productRouter);
 
 app.listen(port, () => {
   console.log(`Application is up and running on port ${port}`);
